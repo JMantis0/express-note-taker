@@ -9,6 +9,7 @@ let activeNote = {};
 
 // A function for getting all notes from the db
 const getNotes = () => {
+	console.log("inside index.js getNotes()");
   return $.ajax({
     url: "/api/notes",
     method: "GET",
@@ -103,6 +104,8 @@ const handleRenderSaveBtn = function () {
 
 // Render's the list of note titles
 const renderNoteList = (notes) => {
+	console.log(notes, typeof notes);
+
   $noteList.empty();
 
   const noteListItems = [];
