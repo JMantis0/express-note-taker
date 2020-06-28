@@ -4,7 +4,6 @@ const path = require("path");
 module.exports = function(app) {
 
 	app.get("/api/notes", function(req, res) {
-		console.log("inside api-get");
 		let dbFilePath = path.join(__dirname, "../db/db.json");
 		fs.readFile(dbFilePath, "utf8", function(err, data) {
 			if(err) {
@@ -15,32 +14,37 @@ module.exports = function(app) {
 	});
 
 	app.post("/api/notes", function(req, res) {
-		console.log(req.body);
 		let dbFilePath = path.join(__dirname, "../db/db.json");
-		//  Read file.  data param in callback is stringified json
-		
 		fs.readFile(dbFilePath, "utf8", function(err, data) {
 			if (err) {
 				console.log(err);
 			}
-			//parse data.  now we have array to push new object to.
 			let json = JSON.parse(data);
-			//push new note to array
-			json.push(req.body)
-
+			json.push(req.body);
+			json.forEach(function(note) {
+				note.id = json.indexOf(note) + 1;
+			});
 			fs.writeFile(path.join(dbFilePath), JSON.stringify(json), "utf8",  function(err, data) {
 				if(err) {
 					console.log(err);
 				}
-				
 			});
-
 		});
 		res.json(req.body);
 	});
 
-	app.delete("/api/notes:id", function(req, res) {
-
+	app.delete("/api/notes/:id", function(req, res) {
+		let noteID = parseInt(req.params.id);
+		let dbFilePath = path.join(__dirname, "../db/db.json");
+		fs.readFile(dbFilePath, "utf8", function(err, data) {
+			let notes = JSON.parse(data);
+			let lessNotes = notes.filter(note => note.id !== noteID);
+			fs.writeFile(dbFilePath, JSON.stringify(lessNotes), "utf8", function(err, data) {
+				if (err) {
+					console.log(err);
+				}
+			});
+			res.json(lessNotes).end();
+		});
 	});
-
 }
