@@ -10,13 +10,18 @@ This is a note taking application.
 
 ## Usage
 
-[Click here]https://still-crag-33509.herokuapp.com/
+![Click here](https://still-crag-33509.herokuapp.com/)
 Type in your note title, note content, and save the note by clicking on the Disk Icon in the top right.
 To look at previously saved notes, click on notes from list on the left hand side.
 
 ## Credits
 
 Trilogy
+
+
+## Contributing
+
+Feel free to issues on the repo
 
 ## License
 
@@ -40,7 +45,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-## Contributing
-
-(pending)
