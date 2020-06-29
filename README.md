@@ -19,6 +19,9 @@ To look at previously saved notes, click on notes from list on the left hand sid
 
 Trilogy
 
+## Technologies Used
+node
+express
 
 ## Contributing
 
