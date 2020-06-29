@@ -1,5 +1,5 @@
 
-[# Express Note Taker](https://still-crag-33509.herokuapp.com/)
+# [Express Note Taker](https://still-crag-33509.herokuapp.com/)
 ![GitHub repo size](https://img.shields.io/github/repo-size/JMantis0/express-note-taker)  ![GitHub language count](https://img.shields.io/github/languages/count/JMantis0/express-note-taker)  ![GitHub top language](https://img.shields.io/github/languages/top/JMantis0/express-note-taker)  
 
 ![screenshot](./public/assets/images/Screenshot.JPG)
