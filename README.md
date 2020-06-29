@@ -10,7 +10,7 @@ This is a note taking application.
 
 ## Usage
 
-![Click here](https://still-crag-33509.herokuapp.com/)
+[Click here](https://still-crag-33509.herokuapp.com/)
 Type in your note title, note content, and save the note by clicking on the Disk Icon in the top right.
 To look at previously saved notes, click on notes from list on the left hand side.
 
