@@ -1,25 +1,25 @@
 {
-  "name": "note-taker",
-  "version": "1.0.0",
-  "description": "Note Taker",
-  "main": "server.js",
-  "scripts": {
-		"start": "express server.js"
-	},
-	"keywords": [
-		"Note",
-		"taker",
-		"heroku0"
-	],
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "express": "^4.16.4"
-  },
-  "devDependencies": {
-    "nodemon": "^2.0.4"
-	},
-	"engines": {
-		"node": "12.16.1"	
-	}
+ "name": "note-taker",
+ "version": "1.0.0",
+ "description": "Note Taker",
+ "main": "server.js",
+ "scripts": {
+  "start": "express server.js"
+ },
+ "keywords": [
+  "Note",
+  "taker",
+  "heroku0"
+ ],
+ "author": "",
+ "license": "MIT",
+ "dependencies": {
+  "express": "^4.16.4"
+ },
+ "devDependencies": {
+  "nodemon": "^2.0.4"
+ },
+ "engines": {
+  "node": "12.16.1"
+ }
 }
