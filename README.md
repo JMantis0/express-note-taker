@@ -2,17 +2,11 @@
 # Express Note Taker
 ![GitHub repo size](https://img.shields.io/github/repo-size/JMantis0/express-note-taker)  ![GitHub language count](https://img.shields.io/github/languages/count/JMantis0/express-note-taker)  ![GitHub top language](https://img.shields.io/github/languages/top/JMantis0/express-note-taker)  
 
-## Description
+![screenshot](./public/assets/images/Screenshot.JPG)
 
-This is a simple application that can be used to write, save, and delete notes.
+# Getting Started
 
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
-* [Contributing](#contributing)
-
+This is a note taking application.
 
 ## Installation
 

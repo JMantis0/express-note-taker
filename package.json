@@ -4,7 +4,7 @@
  "description": "Note Taker",
  "main": "server.js",
  "scripts": {
-  "start": "express server.js"
+  "start": "node server.js"
  },
  "keywords": [
   "Note",
